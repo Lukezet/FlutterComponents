@@ -9,7 +9,7 @@ class AppRoutes {
   static const initialRoute='Home'; 
 
   static final menuOptions = <MenuOptions>[
-    //TODO :Borrar Home
+    
     //MenuOptions(route: 'Home', name: 'Home Screen', screen: const HomeScreen(), icon: Icons.home_outlined),
     MenuOptions(route: 'listview1', name: 'Listview 1', screen: const ListView1(), icon: Icons.list_alt_outlined),
     MenuOptions(route: 'listview2', name: 'Listview 2', screen: const ListView2(), icon: Icons.list_sharp),

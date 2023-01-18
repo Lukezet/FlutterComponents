@@ -4,6 +4,8 @@ import 'package:flutter_components1/models/models.dart';
 import 'package:flutter_components1/routers/app_routes.dart';
 import 'package:flutter_components1/themes/app_themes.dart';
 
+import '../widgets/widgets.dart';
+
 class HomeScreen extends StatelessWidget {
    
   const HomeScreen({super.key});
@@ -17,6 +19,9 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter Components'),
         elevation: 0,
+        actions: [
+          ChangeThemeButtonWidget(),
+        ],
       ),
       body:ListView.separated(
         itemBuilder:(context, index) => ListTile(

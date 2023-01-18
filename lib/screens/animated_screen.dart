@@ -1,6 +1,8 @@
 import 'dart:math' show Random;
 
 import 'package:flutter/material.dart';
+import '../themes/themes.dart';
+
 
 class AnimatedScreen extends StatefulWidget {
    
@@ -14,7 +16,7 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
 
   double _width = 50;
   double _height = 50;
-  Color _color = Colors.greenAccent;
+  Color _color = AppTheme.primary;
   BorderRadiusGeometry _borderRadius = BorderRadius.circular(10);
 
   void changedShape(){
@@ -54,6 +56,7 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.polymer_sharp,size: 30,),
+        backgroundColor:AppTheme.primary,
         onPressed:changedShape,
       ),
     );

@@ -5,11 +5,13 @@ import 'package:flutter/material.dart';
 class AppTheme {
     //definimos el primary color
     static const Color primary = Colors.indigoAccent;
+    static const Color secondary= Colors.indigo;
 
     static final ThemeData lightTheme = ThemeData.light().copyWith(
         
         //Color Primario
         primaryColor:primary,
+      
         
         //AppBar theme
         appBarTheme: const AppBarTheme(
@@ -19,7 +21,7 @@ class AppTheme {
        
         //Text Button Theme  
         textButtonTheme: TextButtonThemeData(
-          style: TextButton.styleFrom(foregroundColor: primary)
+          style: TextButton.styleFrom(foregroundColor: Colors.red)
           ),
 
         //Floating Button  
